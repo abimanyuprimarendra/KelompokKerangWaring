@@ -1,141 +1,41 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/icon" href="webicon.png">
-  <title>Kerang Waring | Motor Specifications</title>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Rental Motor Jogja</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="info.html">Info</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data diri.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url(form1.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 50px;
-      color: white;
-    }
-
-    h2{
-      color: white;
-    }
-
-    .motor-specs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .motor-card {
-      width: 300px;
-      margin: 20px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      text-align: center;
-    }
-
-    .motor-card img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .motor-card h2 {
-      margin: 0;
-    }
-
-    .motor-card p {
-      margin-bottom: 10px;
-    }
-
-    p{
-      color: white;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .container {
-        width: 100%;
-        padding: 10px;
-      }
-
-      .column {
-        width: 100%;
-      }
-    }
-  </style>
+  <title>Motorbike Information</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Motor Specifications</h1>
-  <div class="motor-specs text-light">
-    <div class="motor-card">
-      <img src="pcx.png" alt="Motor 1">
-      <h2>Honda Pcx 2023</h2>
-      <p>Tipe Mesin	4-Langkah, 4-Valve, eSP+
-        Tipe Pendingin	Pendingin Cairan,
-        Kapasitas Mesin  :	156,9 cc, 
-        Kapasitas Tangki : 8.1 L
-      </p>
+  <div class="container mt-4">
+    <h1 class="mb-4">Motorbike Information</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Aeroxx.png" class="img-fluid rounded" alt="Motorbike">
+      </div>
+      <div class="col-md-6">
+        <h3>Motorbike Model X</h3>
+        <p>Color: Black</p>
+        <p>Engine Capacity: 150cc</p>
+        <p>Price: Rp. 25,000,000</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel arcu ut nunc mollis pulvinar nec eu sem. Curabitur efficitur consectetur nisl sit amet varius.</p>
+      </div>
     </div>
-    <div class="motor-card">
-      <img src="nmax.png" alt="Motor 2">
-      <h2>Yamaha Nmax 2023</h2>
-      <p>Tipe Mesin	Liquid Cooled 4-Stroke, SOHC, VVA
-        Kapasitas Mesin :	155,09 cc, 
-        Kapasitas Tangki Bahan Bakar :	7,1 Liter</p>
-    </div>
-    <div class="motor-card">
-      <img src="Aeroxx.png" alt="Motor 3">
-      <h2>Yamaha Aerox 2023</h2>
-      <p>Tipe Mesin Liquid cooled 4-stroke, SOHC,
-        Kapasitas Mesin	:	155cc,
-        Kapasitas tangki : 4,5 liter
-      </p>
+
+    <!-- Additional Information -->
+    <div class="mt-4">
+      <h3>Additional Information</h3>
+      <ul>
+        <li>Year of Manufacture: 2023</li>
+        <li>Top Speed: 120 km/h</li>
+        <li>Fuel Consumption: 40 km/l</li>
+      </ul>
     </div>
   </div>
-  <footer> 
-    <div class="w-100 py-3">
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-12">
-                    <p class="text-center text-light">
-                        Copyright &copy; 2023 Rental Motor Jogja 
-                        | Designed by <a rel="sponsored"></a>Kerang Waring</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+
+  <!-- Bootstrap JS and jQuery (for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
